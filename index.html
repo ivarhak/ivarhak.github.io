@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ivar Hakansson — Mechanical &amp; Aerospace Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- BOOT SEQUENCE -->
+<div id="boot" class="boot">
+  <div class="boot-panel boot-panel-left"></div>
+  <div class="boot-panel boot-panel-right"></div>
+  <div class="boot-content">
+    <div class="boot-ring">
+      <div class="boot-ring-dashed"></div>
+      <div class="boot-ring-solid"></div>
+      <div class="boot-ring-h"></div>
+      <div class="boot-ring-v"></div>
+    </div>
+    <div class="boot-label">INITIALIZING SYSTEM<span class="blink">_</span></div>
+    <div class="boot-bar"><div id="boot-fill" class="boot-fill"></div></div>
+    <div id="boot-pct" class="boot-pct">0%</div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div id="cursor" class="cursor">
+  <div class="cursor-ring"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-tick cursor-tick-top"></div>
+  <div class="cursor-tick cursor-tick-bottom"></div>
+  <div class="cursor-tick cursor-tick-left"></div>
+  <div class="cursor-tick cursor-tick-right"></div>
+</div>
+
+<div class="root">
+
+  <!-- SCROLL RULER -->
+  <div class="ruler">
+    <div id="ruler-label" class="ruler-label">SCROLL 0%</div>
+    <div class="ruler-track">
+      <div id="ruler-dot" class="ruler-dot"></div>
+    </div>
+  </div>
+
+  <!-- UTILITY BAR -->
+  <div class="utility-bar">
+    <div class="utility-status">
+      <div class="status-dot"></div>
+      STATUS: OPEN TO WORK
+    </div>
+    <div class="utility-links">
+      <a href="https://github.com/ivarhak" target="_blank" rel="noopener">GITHUB &#8599;</a>
+      <a href="https://www.linkedin.com/in/ivar-h%C3%A5kansson-250341270" target="_blank" rel="noopener">LINKEDIN &#8599;</a>
+      <a href="mailto:ivarhak08@gmail.com">EMAIL &#8599;</a>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <div id="nav" class="nav">
+    <div class="nav-logo"><span class="accent">//</span> IVAR_HAKANSSON.ME</div>
+    <div class="nav-links">
+      <a href="#about">01_ABOUT</a>
+      <a href="#experience">02_LOG</a>
+      <a href="#work">03_WORK</a>
+      <a href="#contact">04_CONTACT</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div id="hero-box" class="hero-box">
+      <div class="hero-box-corner hero-box-corner-tl"></div>
+      <div class="hero-box-corner hero-box-corner-br"></div>
+      <div class="hero-box-photo">
+        <img src="assets/profile-photo.jpg" alt="Ivar Hakansson" onerror="this.parentElement.classList.add('placeholder'); this.remove();">
+      </div>
+      <div class="hero-box-dashed"></div>
+    </div>
+
+    <div class="hero-kicker fade-up d1">[ MECHANICAL &amp; AEROSPACE ENGINEER ]</div>
+    <div class="hero-title fade-up d2">"The greatest scientists are artists as well." <span class="cite">&mdash; Einstein</span></div>
+
+    <div class="hero-rule fade-up d3">
+      <div class="rule-corner rule-corner-l"></div>
+      <div class="rule-line"></div>
+      <div class="rule-corner rule-corner-r"></div>
+      <div class="rule-label">TOLERANCE: &plusmn;0.0 DEVIATION</div>
+    </div>
+
+    <div class="hero-desc fade-up d4">
+      Rocketry and embedded systems builder focused on flight computers, sensor integration, and mechanical design &mdash; previously part-time at <strong>Fruity Chutes</strong>, building drone recovery parachutes.
+    </div>
+
+    <div class="hero-actions fade-up d5">
+      <a href="#work" class="btn btn-primary">VIEW_WORK &rarr;</a>
+      <a href="#contact" class="btn btn-outline">CONTACT &rarr;</a>
+    </div>
+
+    <div class="hero-footnote fade-up d6">
+      <div class="footnote-tick"></div>
+      <div class="footnote-line"></div>
+      <div class="footnote-tick"></div>
+      <div class="footnote-label">ACTIONS &times;2</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about" class="section reveal">
+    <div class="reveal-inner about-inner">
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-br"></div>
+      <div class="section-label">
+        01 / ABOUT
+        <div class="label-rule"></div>
+      </div>
+      <div>
+        <div class="about-quote">"Our greatest glory is not in never failing, but in rising every time we fail." <span class="cite">&mdash; Confucius</span></div>
+        <p class="about-body">
+          I build rockets and the electronics that fly in them. I led my high school TARC team's shift from unguided to actively-controlled competition rockets &mdash; handling mechanical design, manufacturing, and PCB design along the way. I also served as mechanical/design lead for South Bay Robotics (FRC) during their 2024 season, and previously worked part-time at Fruity Chutes, a UAS drone parachute recovery company.
+        </p>
+        <div class="matrix-footnote">
+          <div class="footnote-tick"></div>
+          <div class="footnote-line" style="width:220px; max-width:30vw;"></div>
+          <div class="footnote-tick"></div>
+          <div class="footnote-label">COMPETENCY MATRIX &mdash; 9 ITEMS</div>
+        </div>
+        <div id="skills-grid" class="skills-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div id="experience" class="section exp-section reveal">
+    <div class="reveal-inner">
+      <div class="section-label">
+        02 / LOG
+        <div class="label-rule"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-rail"></div>
+        <div id="timeline-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <div id="work" class="section work-section reveal">
+    <div class="reveal-inner">
+      <div class="section-label">
+        03 / SELECTED WORK
+        <div class="label-rule"></div>
+      </div>
+      <div id="work-grid" class="work-grid"></div>
+      <a href="https://github.com/ivarhak" target="_blank" rel="noopener" class="more-github">MORE FOUND ON GITHUB &#8599;</a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact" class="section contact-section reveal">
+    <div class="reveal-inner">
+      <div class="section-label">
+        04 / CONTACT
+        <div class="label-rule"></div>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-title">Have a project that needs another set of eyes? Lets talk</div>
+          <div class="contact-links">
+            <a href="mailto:ivarhak08@gmail.com">EMAIL</a>
+            <a href="https://www.linkedin.com/in/ivar-h%C3%A5kansson-250341270" target="_blank" rel="noopener">LINKEDIN</a>
+            <a href="https://github.com/ivarhak" target="_blank" rel="noopener">GITHUB</a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <input id="cf-name" placeholder="NAME">
+          <input id="cf-email" placeholder="EMAIL">
+          <textarea id="cf-message" placeholder="MESSAGE" rows="3"></textarea>
+          <div class="submit-footnote">
+            <div class="footnote-tick"></div>
+            <div class="footnote-line" style="width:60px;"></div>
+            <div class="footnote-label">SUBMIT</div>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn">SEND &rarr;</button>
+        </form>
+      </div>
+      <div class="contact-footer">
+        <div>&copy; 2026 IVAR_HAKANSSON</div>
+        <div>EARTH, SOL, MILKY WAY GALAXY</div>
+        <div>+1 (669) 251-5996</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
