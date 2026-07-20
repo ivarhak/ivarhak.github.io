@@ -152,7 +152,7 @@ a { text-decoration: none; }
 }
 .hero-box {
   position: absolute; top: 120px; right: 6vw; width: 220px; height: 220px;
-  border: 1px solid var(--line-strong); transform: rotate(0deg); transition: transform 0.3s ease-out;
+  border: 1px solid var(--line-strong);
 }
 .hero-box-corner { position: absolute; width: 16px; height: 16px; }
 .hero-box-corner-tl { top: -1px; left: -1px; border-top: 2px solid var(--accent); border-left: 2px solid var(--accent); }

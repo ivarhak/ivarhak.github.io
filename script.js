@@ -97,12 +97,9 @@
   const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   if (isFinePointer) {
     const cursor = document.getElementById('cursor');
-    const heroBox = document.getElementById('hero-box');
     window.addEventListener('mousemove', (e) => {
       cursor.style.left = e.clientX + 'px';
       cursor.style.top = e.clientY + 'px';
-      const tilt = Math.max(-6, Math.min(6, (e.clientX - window.innerWidth * 0.85) / 60));
-      if (heroBox) heroBox.style.transform = `rotate(${tilt.toFixed(1)}deg)`;
     });
     window.addEventListener('mouseover', (e) => {
       const t = e.target.closest && e.target.closest('a,button,input,textarea');
