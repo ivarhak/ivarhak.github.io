@@ -24,7 +24,7 @@
     { number: "003", tag: "SOFTWARE", title: "OpenRocket Airbrake Simulation Plugin",
       desc: "OpenRocket plugin modeling deployable airbrakes for closed-loop apogee control on TARC competition rockets.",
       placeholder: "[ plugin screenshot ]", image: "assets/proj-plugin.png" },
-    { number: "004", tag: "SOFTWARE", title: "SSSB Watch KTH",
+    { number: "004", tag: "SOFTWARE", title: "Stockholm Student Housing Finder",
       desc: "Website for tracking the chaotic student housing market in Stockholm, allows the user to find, sort, and compare available units.",
       placeholder: "[ project photo ]", image: "assets/proj-sssb.png" },
     { number: "005", tag: "TARC", title: "TARC Guidance Transition",
