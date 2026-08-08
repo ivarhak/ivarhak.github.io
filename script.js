@@ -26,7 +26,7 @@
       placeholder: "[ plugin screenshot ]", image: "assets/proj-plugin.png" },
     { number: "004", tag: "SOFTWARE", title: "Stockholm Student Housing Finder",
       desc: "Website for tracking the chaotic student housing market in Stockholm, allows the user to find, sort, and compare available units.",
-      placeholder: "[ project photo ]", image: "assets/proj-sssb.png" },
+      placeholder: "[ project photo ]", image: "assets/proj-sssb2.png" },
     { number: "005", tag: "TARC", title: "TARC Guidance Transition",
       desc: "Led mechanical and PCB design for Cupertino High School's TARC team's shift from unguided to actively-controlled rockets.",
       placeholder: "[ TARC rocket build ]", image: "assets/proj-tarc.jpg" },
