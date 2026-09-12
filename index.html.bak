@@ -260,7 +260,7 @@
             <div style="width:36px;height:1px;background:oklch(0.5 0.03 250 / 0.6)"></div>
           </div>
           <div style="margin-top:10px;font-size:14px;line-height:1.6;color:oklch(0.72 0.02 85);text-wrap:pretty">Student housing from SSSB and Bostadsförmedlingen on one map. Pick your campus and filter by rent, queue days, and how long the bike ride actually is. Updates every two hours. Göteborg and Lund are in the works.</div>
-          <a href="https://nästet.se" target="_blank" rel="noopener" style="margin-top:14px;display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.08em;color:oklch(0.58 0.14 250);border-bottom:1px solid oklch(0.4 0.03 250 / 0.5)" style-hover="border-color:oklch(0.5 0.14 250)">VISIT NÄSTET.SE ↗</a>
+          <a href="https://nästet.se" target="_blank" rel="noopener" style="margin-top:14px;display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.08em;color:oklch(0.58 0.14 250);border-bottom:1px solid oklch(0.4 0.03 250 / 0.5)" style-hover="border-color:oklch(0.5 0.14 250)">VIEW ON GITHUB ↗</a>
           <div style="margin-top:16px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;color:oklch(0.45 0.02 85);display:flex;justify-content:space-between;gap:8px"><span>DRWN. IH</span><span>SCALE 1:1</span><span>004-A</span></div>
         </div>
         <div data-stagger="1" style="position:relative;background:oklch(0.14 0.015 250);padding:36px;opacity:0;transform:translateY(32px);transition:background 0.3s ease,opacity 0.6s ease,transform 0.6s ease" style-hover="background:oklch(0.17 0.02 250)">
