@@ -24,9 +24,9 @@
 </helmet>
 
 <div data-boot="1" style="position:fixed;inset:0;z-index:10000;pointer-events:none">
-  <div data-boot-left="1" style="position:absolute;top:0;left:0;width:50%;height:100%;background:oklch(0.14 0.015 250);background-image:linear-gradient(oklch(0.32 0.02 250 / 0.4) 1px, transparent 1px),linear-gradient(90deg, oklch(0.32 0.02 250 / 0.4) 1px, transparent 1px);background-size:64px 64px;border-right:1px solid oklch(0.5 0.14 250 / 0.4);transition:transform 1s cubic-bezier(0.76,0,0.24,1) 0.15s"></div>
-  <div data-boot-right="1" style="position:absolute;top:0;right:0;width:50%;height:100%;background:oklch(0.14 0.015 250);background-image:linear-gradient(oklch(0.32 0.02 250 / 0.4) 1px, transparent 1px),linear-gradient(90deg, oklch(0.32 0.02 250 / 0.4) 1px, transparent 1px);background-size:64px 64px;border-left:1px solid oklch(0.5 0.14 250 / 0.4);transition:transform 1s cubic-bezier(0.76,0,0.24,1) 0.15s"></div>
-  <div data-boot-content="1" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:22px;transition:opacity 0.35s ease">
+  <div data-boot-left="1" style="position:absolute;top:0;left:0;width:50%;height:100%;background:oklch(0.14 0.015 250);background-image:linear-gradient(oklch(0.32 0.02 250 / 0.4) 1px, transparent 1px),linear-gradient(90deg, oklch(0.32 0.02 250 / 0.4) 1px, transparent 1px);background-size:64px 64px;border-right:1px solid oklch(0.5 0.14 250 / 0.4);transition:transform 0.6s cubic-bezier(0.76,0,0.24,1) 0.05s"></div>
+  <div data-boot-right="1" style="position:absolute;top:0;right:0;width:50%;height:100%;background:oklch(0.14 0.015 250);background-image:linear-gradient(oklch(0.32 0.02 250 / 0.4) 1px, transparent 1px),linear-gradient(90deg, oklch(0.32 0.02 250 / 0.4) 1px, transparent 1px);background-size:64px 64px;border-left:1px solid oklch(0.5 0.14 250 / 0.4);transition:transform 0.6s cubic-bezier(0.76,0,0.24,1) 0.05s"></div>
+  <div data-boot-content="1" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:22px;transition:opacity 0.25s ease">
     <div style="position:relative;width:96px;height:96px">
       <div style="position:absolute;inset:0;border-radius:50%;border:1px dashed oklch(0.5 0.03 250 / 0.7);animation:spin 6s linear infinite"></div>
       <div style="position:absolute;inset:14px;border-radius:50%;border:1px solid oklch(0.5 0.14 250 / 0.6)"></div>
@@ -392,7 +392,7 @@ class Component extends DCLogic {
   renderVals() {
     return {
       skills: ["Aerospace Engineering", "Mechanical Engineering", "CAD", "PCB Design - KiCad",
-        "Control Systems Design - MATLAB", "3D Printing - proud Ender 3 owner", "CFD Simulation - mostly solidworks", "Embedded Systems",
+        "Control Systems Design - MATLAB", "3D Printing - proud Ender 3 owner", "CFD Simulation - mostly SolidWorks", "Embedded Systems",
         "Rocketry (TARC/HPR)"],
       timeline: [ // logoH: badge marks read smaller than wordmarks at the same height
 
@@ -447,7 +447,7 @@ class Component extends DCLogic {
 
     let pct = 0;
     this._iv = setInterval(() => {
-      pct = Math.min(100, pct + 4 + Math.random() * 9);
+      pct = Math.min(100, pct + 10 + Math.random() * 12);
       const fill = this.q('[data-boot-fill]'), lbl = this.q('[data-boot-pct]');
       if (fill) fill.style.width = pct + '%';
       if (lbl) lbl.textContent = Math.round(pct) + '%';
@@ -458,10 +458,10 @@ class Component extends DCLogic {
           if (l) l.style.transform = 'translateX(-100%)';
           if (r) r.style.transform = 'translateX(100%)';
           if (c) c.style.opacity = '0';
-          setTimeout(() => { const b = this.q('[data-boot]'); if (b) b.style.display = 'none'; }, 1300);
-        }, 350);
+          setTimeout(() => { const b = this.q('[data-boot]'); if (b) b.style.display = 'none'; }, 700);
+        }, 150);
       }
-    }, 60);
+    }, 45);
 
     this.qa('[data-autoplay-video]').forEach(v => {
       const silence = () => {
